@@ -10,11 +10,6 @@
     margin: 0;
 }
 
-.body{
-    background: #fff;
-    color: #fff;
-    font-family: 'Carter One', cursive;;
-}
 
 /* utilities */
 .btn-light{
@@ -60,10 +55,7 @@ ul{
     height: 70px;
 }
 
-.container{
-    justify-content: center;
-    align-items: center;
-}
+
 
 #section-a .container .showcase-image{
     display: flex;
@@ -209,3 +201,82 @@ a{
     text-decoration: none;
     color: #fff;
 }
+
+@media (max-width: 800px) {
+    /* section-a */
+    #section-a img{
+        margin-left: -10px;
+        margin-top: -10px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #section-a .container .showcase-image{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-content: center;
+        text-align: center;
+    }
+    #section-b .concept{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    #section-a{
+        height: 200px;
+    }
+     
+     .span-text .title-h1{
+        font-size: 1rem;
+        padding-bottom: 10px;  
+    }
+    .span-text .lead{
+        font-size: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+    .home-btn{
+        display: none;
+    }
+    #section-c .section-c{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+    #footer-section .container .footer-bar{
+        height: 100px;
+    }
+    .footer-bar{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+    .p-b{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+@media (max-height: 800px) {
+    #section-a .container .span-text div{
+        justify-content: center;
+        text-align: center;
+        padding-top: 100px;
+    }
+    .span-text .title-h1{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    .span-text .lead{
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 1rem;
+    }
+
+}
+

@@ -1,0 +1,11 @@
+#footer-section .container .footer-bar{
+    height: 100px;
+}
+.footer-bar{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+}
